@@ -13,9 +13,9 @@ echo "Only For Premium Users"
 exit 0
 fi
 apt install jq curl -y
-DOMAIN=endkavpn.tech
+DOMAIN=vmess.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.endkavpn.tech
+SUB_DOMAIN=${sub}.vmess.my.id
 CF_ID=pradiasangindraswari@gmail.com
 CF_KEY=75b54a5c9fd50751003abac0fefee534528c0
 set -euo pipefail
