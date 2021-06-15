@@ -12,6 +12,12 @@ echo -e "${red}Permission Denied!${NC}";
 echo "Only For Premium Users"
 exit 0
 fi
+source /var/lib/premium-script/ipvps.conf
+if [[ "$IP" = "" ]]; then
+domain=$(cat /etc/v2ray/domain)
+else
+domain=$IP
+fi
 IP=$(wget -qO- ipinfo.io/ip);
 date=$(date +"%Y-%m-%d")
 email=$(cat /home/email)
@@ -44,6 +50,8 @@ link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 echo -e "The following is a link to your vps data backup file.
 
 Your VPS IP $IP
+
+Domain=${domain}
 
 $link
 
