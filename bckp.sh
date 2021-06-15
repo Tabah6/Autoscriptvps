@@ -49,10 +49,11 @@ id=(`echo $url | grep '^https' | cut -d'=' -f2`)
 link="https://drive.google.com/u/4/uc?id=${id}&export=download"
 echo -e "The following is a link to your vps data backup file.
 
+=================
 Your VPS IP $IP
 
 Domain=${domain}
-
+=================
 $link
 
 If you want to restore data, please enter the link above.
