@@ -2,7 +2,7 @@
 
 clear
 
-figlet Endka Project | lolcat
+figlet Tabah Store | lolcat
 
 if [[ -e /etc/debian_version ]]; then
 	OS=debian
